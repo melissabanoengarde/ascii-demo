@@ -54,6 +54,7 @@ const App = () => {
 
       <section className="ascii">
         <Canvas>
+          <color attach="background" args={["white"]} />
           <Scene />
         </Canvas>
       </section>
