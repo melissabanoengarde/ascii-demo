@@ -1,8 +1,9 @@
 import React from "react";
+import { motion as m } from "framer-motion";
 
 const Header = () => {
   return (
-    <header
+    <m.header
       className="header"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -50,7 +51,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-    </header>
+    </m.header>
   );
 };
 
