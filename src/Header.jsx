@@ -23,6 +23,9 @@ const Header = ({ clicked }) => {
               Melissa Banoen-Garde
             </a>
           </p>
+          <br></br>
+
+          <p>click or scroll</p>
         </div>
         <div className="container__children one">
           {!clicked
