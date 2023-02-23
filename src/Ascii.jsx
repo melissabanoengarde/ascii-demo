@@ -6,7 +6,7 @@ const Ascii = ({
   renderIndex = 1,
   bg = "#fff",
   textColor = "lightgray",
-  characters = "@.",
+  characters = " .:-+*=:",
   invert = true,
   color = false,
   resolution = 0.15,
@@ -25,6 +25,7 @@ const Ascii = ({
     asciiEffect.domElement.style.position = "absolute";
     asciiEffect.domElement.style.top = "0px";
     asciiEffect.domElement.style.left = "0px";
+    asciiEffect.domElement.style.pointerEvents = "none";
 
     return asciiEffect;
   }, [characters, invert, color, resolution]);
