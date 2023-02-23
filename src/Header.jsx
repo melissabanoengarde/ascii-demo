@@ -30,14 +30,14 @@ const Header = ({ clicked }) => {
             : para[3].map((x, index) => <p key={index}>{x}</p>)}
         </div>
         <div className="container_children two">
-          {para[1].map((x, index) => (
-            <p key={index}>{x}</p>
-          ))}
+          {!clicked
+            ? para[1].map((x, index) => <p key={index}>{x}</p>)
+            : para[4].map((x, index) => <p key={index}>{x}</p>)}
         </div>
         <div className="container__children three">
-          {para[2].map((x, index) => (
-            <p key={index}>{x}</p>
-          ))}
+          {!clicked
+            ? para[2].map((x, index) => <p key={index}>{x}</p>)
+            : para[5].map((x, index) => <p key={index}>{x}</p>)}
         </div>
       </div>
     </m.header>
