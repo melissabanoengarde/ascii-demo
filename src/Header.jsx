@@ -25,7 +25,9 @@ const Header = ({ clicked }) => {
           </p>
           <br></br>
 
-          <p>click or scroll</p>
+          <p style={{ background: "#EEFAF3", display: "inline" }}>
+            click or scroll
+          </p>
         </div>
         <div className="container__children one">
           {!clicked
