@@ -12,7 +12,7 @@ const App = () => {
     <AnimatePresence>
       <Suspense fallback={<Loading />}>
         <main>
-          <Header />
+          <Header clicked={clicked} />
 
           <m.section
             className="ascii"
@@ -20,7 +20,7 @@ const App = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
           >
-            <Canvas>
+            <Canvas onClick={() => click(!clicked)}>
               <color attach="background" args={["white"]} />
               <Scene clicked={clicked} />
             </Canvas>
