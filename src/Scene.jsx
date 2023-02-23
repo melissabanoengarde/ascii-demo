@@ -16,7 +16,7 @@ const Scene = ({ clicked }) => {
       <ambientLight />
       <pointLight position={[-1, 1, 1]} intensity={8} penumbra={1} />
 
-      {/* <mesh
+      <mesh
         scale={0.05}
         // scale={0.09}
         ref={torusRef}
@@ -30,7 +30,7 @@ const Scene = ({ clicked }) => {
           characters={clicked ? " -@.n̷̛̻̲̤͙͎͍̰̟̓̑͗͌̑̕̕͠.̴̻̺̗͇͎̻͔͓̂@" : "2++_*-=~:48_* "}
           textColor={clicked ? "red" : "lightgray"}
         />
-      </mesh> */}
+      </mesh>
 
       <mesh
         scale={clicked ? 0.15 : 0.09}
