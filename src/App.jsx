@@ -11,6 +11,7 @@ const App = () => {
   return (
     <AnimatePresence>
       <Suspense fallback={<Loading />}>
+        <div className="mobile">For now, this page is mobile only</div>
         <main>
           <Header clicked={clicked} />
 

@@ -82,3 +82,26 @@ p {
   left: 0;
   z-index: 1;
 }
+
+@media (max-width: 765px) {
+  .header {
+    display: none;
+  }
+
+  .mobile {
+    /* display: block; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 765px) {
+  .mobile {
+    display: none;
+  }
+}
