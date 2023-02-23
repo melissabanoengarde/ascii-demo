@@ -19,7 +19,7 @@ const Scene = () => {
       <mesh scale={0.09} ref={torusRef} rotation={[0, 0.25, 0]}>
         <torusKnotGeometry args={[15, 3, 600, 12, 2, 18]} />
         <meshStandardMaterial color="red" />
-        <Ascii />
+        <Ascii characters=" -*_" />
       </mesh>
     </>
   );
