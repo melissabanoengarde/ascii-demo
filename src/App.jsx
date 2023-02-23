@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { AnimatePresence, motion as m } from "framer-motion";
 import Scene from "./Scene";
@@ -6,6 +6,8 @@ import Loading from "./Loading";
 import Header from "./Header";
 
 const App = () => {
+  const [clicked, click] = useState(false);
+
   return (
     <AnimatePresence>
       <Suspense fallback={<Loading />}>
@@ -20,7 +22,7 @@ const App = () => {
           >
             <Canvas>
               <color attach="background" args={["white"]} />
-              <Scene />
+              <Scene clicked={clicked} />
             </Canvas>
           </m.section>
         </main>
